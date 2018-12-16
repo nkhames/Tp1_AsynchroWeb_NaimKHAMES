@@ -2,9 +2,11 @@
   "name": "asynchronousweb",
   "version": "0.2.0",
   "description": "tp2",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/tsc -p tsconfig.json",
+    "start": "./node_modules/.bin/ts-node src/server.ts",
+    "dev": "./node_modules/.bin/nodemon "
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,20 @@
   },
   "homepage": "https://github.com/nkhames/Tp1_AsynchroWeb_NaimKHAMES#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "encoding-down": "^5.0.4",
+    "express": "^4.16.4",
+    "level-ws": "^1.0.0",
+    "leveldown": "^4.0.1",
+    "levelup": "^3.1.1",
+    "package.json": "^2.0.1",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/leveldown": "^4.0.0",
+    "@types/levelup": "^3.1.0",
+    "@types/node": "^10.12.15",
+    "nodemon": "^1.18.9",
+    "ts-node-dev": "^1.0.0-pre.32"
   }
 }
