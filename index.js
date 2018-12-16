@@ -1,5 +1,7 @@
 // Import a module
 const http = require('http');
+const router = require('./router')
+const express = require('express')
 // Import Node url module
 const url = require('url');
 const qs = require('querystring');
@@ -7,7 +9,7 @@ const fs = require('fs');
 const port=8080;
 
 
-
+/*
 const serverHandle = function (req, res) {
 //parse la route
   const route = url.parse(req.url)
@@ -52,9 +54,12 @@ const serverHandle = function (req, res) {
   }
 
   // Declare an http server
-  const app = http.createServer(serverHandle);
-
+  const app = http.createServer(serverHandle);*/
+  const app = express()
+  app.use('/', router)
   // Start the server
   app.listen(port, function(){
     console.log("Server started on port " + port)
   })
+
+

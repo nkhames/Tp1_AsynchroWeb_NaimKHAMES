@@ -1,0 +1,22 @@
+{
+  "name": "asynchronousweb",
+  "version": "0.2.0",
+  "description": "tp2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkhames/Tp1_AsynchroWeb_NaimKHAMES.git"
+  },
+  "author": "Naim Khames",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkhames/Tp1_AsynchroWeb_NaimKHAMES/issues"
+  },
+  "homepage": "https://github.com/nkhames/Tp1_AsynchroWeb_NaimKHAMES#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
